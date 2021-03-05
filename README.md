@@ -5,12 +5,16 @@ Simple Wordpress Dockerfile for hub.docker.com with minor improvements for the g
 - [x] headers added for better caching
 
 ### Build status:
-[![Build Status](https://img.shields.io/docker/cloud/automated/andreaskasper/mysqldump.svg)](https://hub.docker.com/r/andreaskasper/docker-wordpress)
-[![Build Status](https://img.shields.io/docker/cloud/build/andreaskasper/mysqldump.svg)](https://hub.docker.com/r/andreaskasper/docker-wordpress)
+[![Build Status](https://img.shields.io/docker/cloud/automated/andreaskasper/wordpress.svg)](https://hub.docker.com/r/andreaskasper/wordpress)
+[![Build Status](https://img.shields.io/docker/cloud/build/andreaskasper/wordpress.svg)](https://hub.docker.com/r/andreaskasper/wordpress)
+![Build Status](https://img.shields.io/docker/image-size/andreaskasper/wordpress/latest)
 
 ### Bugs & Issues:
 ![Github Issues](https://img.shields.io/github/issues/andreaskasper/docker-wordpress.svg)
 ![Code Languages](https://img.shields.io/github/languages/top/andreaskasper/docker-wordpress.svg)
+
+### Stats:
+![Docker Pulls](https://img.shields.io/docker/pulls/andreaskasper/wordpress.svg)
 
 ### Running the container :
 
@@ -27,6 +31,15 @@ $ docker run -d andreaskasper/wordpress
 | WORDPRESS_DB_USER | MySQL Username | wordpress_user |
 | WORDPRESS_DB_PASSWORD | MySQL Password | 123456;-) |
 | WORDPRESS_DB_NAME | MySQL Database Name | worpdress |
+| WORDPRESS_AUTH_KEY | | |
+| WORDPRESS_SECURE_AUTH_KEY | | |
+| WORDPRESS_LOGGED_IN_KEY | | |
+| WORDPRESS_NONCE_KEY | | |
+| WORDPRESS_AUTH_SALT | | |
+| WORDPRESS_SECURE_AUTH_SALT | | |
+| WORDPRESS_LOGGED_IN_SALT | | |
+| WORDPRESS_NONCE_SALT | | |
+| WORDPRESS_DEBUG | | 1 |
 | WORDPRESS_CONFIG_EXTRA | Extra Configurations for wp-config.php | define('FS_METHOD', 'direct'); |
 
 
