@@ -24,6 +24,27 @@ Simple Wordpress Dockerfile for hub.docker.com with minor improvements for the g
 $ docker run -d andreaskasper/wordpress
 ```
 
+#### Docker-Compose
+
+```YAML
+version 2
+
+services:
+  wordpress:
+    image: andreaskasper/wordpress:latest
+    restart: always
+    ports:
+      - 8080:80
+    volumes:
+      - ./data/:/var/www/html/wp-content/
+    links:
+      - database:db
+  database:
+    image: mariadb
+    restart: always
+```
+
+
 ### Environment Parameters
 | Parameter     | Description   | Example       |
 | ------------- |:-------------:|:-------------:|
