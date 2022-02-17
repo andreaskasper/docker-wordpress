@@ -3,6 +3,7 @@ Simple Wordpress Dockerfile for hub.docker.com with minor improvements for the g
 
 ### Features
 - [x] headers added for better caching
+- [x] Auto-CI to eliminate security issues 
 
 ### Build status:
 [![Build Status](https://img.shields.io/docker/cloud/automated/andreaskasper/wordpress.svg)](https://hub.docker.com/r/andreaskasper/wordpress)
