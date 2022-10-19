@@ -6,9 +6,10 @@ Simple Wordpress Dockerfile for hub.docker.com with minor improvements for the g
 - [x] Auto-CI to eliminate security issues 
 
 ### Build status:
-[![Build Status](https://img.shields.io/docker/cloud/automated/andreaskasper/wordpress.svg)](https://hub.docker.com/r/andreaskasper/wordpress)
-[![Build Status](https://img.shields.io/docker/cloud/build/andreaskasper/wordpress.svg)](https://hub.docker.com/r/andreaskasper/wordpress)
+[![Docker Image CI](https://github.com/andreaskasper/docker-wordpress/actions/workflows/docker-image.yml/badge.svg)](https://github.com/andreaskasper/docker-wordpress/actions/workflows/docker-image.yml)
 ![Build Status](https://img.shields.io/docker/image-size/andreaskasper/wordpress/latest)
+![Build Status](https://img.shields.io/docker/image-size/andreaskasper/wordpress/headers)
+![Build Status](https://img.shields.io/docker/image-size/andreaskasper/wordpress/xsendfile)
 
 ### Bugs & Issues:
 ![Github Issues](https://img.shields.io/github/issues/andreaskasper/docker-wordpress.svg)
