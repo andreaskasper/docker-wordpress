@@ -46,3 +46,10 @@ jobs:
           context: Dockerfiles/xsendfile/.
           push: true
           tags: andreaskasper/wordpress:xsendfile
+      -
+        name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: Dockerfiles/mail/.
+          push: true
+          tags: andreaskasper/wordpress:mail
