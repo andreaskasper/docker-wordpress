@@ -4,7 +4,7 @@
 POSTFIX_DOMAIN=${POSTFIX_DOMAIN:-example.com}
 
 # Configure Postfix
-echo "myhostname = ${POSTFIX_DOMAIN}" >> /etc/postfix/main.cf
+sed -i "s/^myhostname = .*/myhostname = ${POSTFIX_DOMAIN}/" /etc/postfix/main.cf
 
 # Start Postfix service
 service postfix start
