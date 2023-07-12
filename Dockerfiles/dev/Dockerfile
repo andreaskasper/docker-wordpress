@@ -10,6 +10,10 @@ RUN apt-get update \
     && mv /var/www/html/wordpress/* /var/www/html/ \
     && apt-get clean
 
+RUN a2enmod rewrite \
+    && a2enmod headers \
+    && docker-php-ext-install mysqli
+
 EXPOSE 80
 EXPOSE 3306
 
